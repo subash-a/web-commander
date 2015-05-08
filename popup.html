@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+      background: #92D3EA;
+      }
+      #command-block {
+      margin: 10px 10px 10px 10px;
+      font-family:monospace;
+      }
+      input {
+      font-size: 1.12em;
+      }
+      #status-block {
+      height: 20px;
+      }
+      #status-message {
+      text-align: right;
+      margin-right: 5px;
+      font-size:0.8em;
+      }
+      #todo-block {
+      display:none;
+      }
+      #todo-description {
+      margin: 10px 10px 10px 10px;
+      }
+      #message-box {
+      margin: 10px 10px 10px 10px;
+      }
+      #todo-block.show {
+      display:block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="command-block">
+      <input id="command-input" type="text" placeholder="command:context"/>
+    </div>
+    <div id="todo-block">
+      <textarea id="todo-description"></textarea>
+    </div>
+    <div id="messages">
+      <p id="message-box"> </p>
+    </div>
+    <div id="status-block">
+      <div id="status-message"></div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
